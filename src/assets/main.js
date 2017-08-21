@@ -12,11 +12,9 @@ function guess() {
         attempt+=1;
     }
     else{
-<<<<<<< HEAD
         attempt.value++;
-=======
         return false;
->>>>>>> parent of 31716ad... respuesta 5
+
     }
     
     if(getResults(input.value)){
@@ -48,11 +46,7 @@ function setMessage(message){
 }
 
 function validateInput(input){
-<<<<<<< HEAD
     if(input.value.length<4){
-=======
-    if(input.lenght<4){
->>>>>>> parent of 5873dc7... respuesta 4
         document.getElementById('message').innerHTML = "Guesses must be exactly 4 characters long.";
         return false;
     }
