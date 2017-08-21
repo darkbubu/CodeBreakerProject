@@ -13,7 +13,7 @@ function guess() {
         return false;
     }
     else{
-        attempt+=1;
+        attempt.value++;
     }
     
     if(getResults(input.value)){
@@ -37,7 +37,7 @@ function setHiddenFields(){
         answer.value = "0"+answer.value;
     }
     console.log(answer.value);
-    attempt = 0;
+    attempt.value = 0;
 }
 
 function setMessage(message){
@@ -45,7 +45,7 @@ function setMessage(message){
 }
 
 function validateInput(input){
-    if(input.length<4){
+    if(input.value.length<4){
         document.getElementById('message').innerHTML = "Guesses must be exactly 4 characters long.";
         return false;
     }
