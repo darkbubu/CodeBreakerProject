@@ -8,12 +8,15 @@ function guess() {
     if(answer.value=='' || attempt==''){
         setHiddenFields();
     }
-    
-    if(!validateInput(input)){
-        return false;
+    if(validateInput(input)){
+        attempt+=1;
     }
     else{
+<<<<<<< HEAD
         attempt.value++;
+=======
+        return false;
+>>>>>>> parent of 31716ad... respuesta 5
     }
     
     if(getResults(input.value)){
