@@ -36,7 +36,6 @@ function setHiddenFields(){
     while(answer.value.length<4){
         answer.value = "0"+answer.value;
     }
-    console.log(answer.value);
     attempt.value = 0;
 }
 
@@ -64,7 +63,6 @@ function getResults(input){
         else{
             final = final +input[i];
         }
-        //console.log(answer.value[i]+" "+input[i]);
 
     }
      
