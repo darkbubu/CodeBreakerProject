@@ -31,11 +31,11 @@ function guess() {
 
 //implement new functions here
 function setHiddenFields(){
-    answer.value = Math.floor((Math.random() * 9999));
-    
-    while(answer.lenght<4){
+    answer.value = '57';//Math.floor((Math.random() * 9999));
+    while(answer.value.length<4){
         answer.value = "0"+answer.value;
     }
+    console.log(answer.value);
     attempt = 0;
 }
 
@@ -63,7 +63,7 @@ function getResults(input){
         else{
             final = final +input[i];
         }
-        console.log(answer.value[i]+" "+input[i]);
+        //console.log(answer.value[i]+" "+input[i]);
 
     }
      
