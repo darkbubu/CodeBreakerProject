@@ -8,11 +8,12 @@ function guess() {
     if(answer.value=='' && attempt==''){
         setHiddenFields();
     }
-    if(validateInput(input)){
-        attempt+=1;
+    
+    if(!validateInput(input)){
+        return false;
     }
     else{
-        return false;
+        attempt+=1;
     }
     
     if(getResults(input.value)){
