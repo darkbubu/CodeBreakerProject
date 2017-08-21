@@ -5,7 +5,7 @@ let attempt = document.getElementById('attempt');
 function guess() {
     let input = document.getElementById('user-guess');
     //add functionality to guess function here
-    if(answer.value=='' && attempt==''){
+    if(answer.value=='' || attempt==''){
         setHiddenFields();
     }
     
@@ -45,7 +45,11 @@ function setMessage(message){
 }
 
 function validateInput(input){
+<<<<<<< HEAD
     if(input.value.length<4){
+=======
+    if(input.lenght<4){
+>>>>>>> parent of 5873dc7... respuesta 4
         document.getElementById('message').innerHTML = "Guesses must be exactly 4 characters long.";
         return false;
     }
